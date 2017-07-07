@@ -1,0 +1,891 @@
+<metadata__catalog__entry>
+  <version>5.2.0.0</version>
+  <types class="tree-map">
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>wsbibliografia</id>
+        <displayName>wsbibliografia</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:plengua</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                      <localPart>string</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                    <localPart>plengua</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:pcurso</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                    <localPart>pcurso</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:pcodasi</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                    <localPart>pcodasi</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:porden</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                    <localPart>porden</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+          <localPart>wsbibliografia</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;s:schema xmlns:s=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:http=&quot;http://schemas.xmlsoap.org/wsdl/http/&quot; xmlns:mime=&quot;http://schemas.xmlsoap.org/wsdl/mime/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:soap12=&quot;http://schemas.xmlsoap.org/wsdl/soap12/&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:tm=&quot;http://microsoft.com/wsdl/mime/textMatching/&quot; xmlns:tns=&quot;http://UASI/WS_DOCENCIA.wsdl&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://UASI/WS_DOCENCIA.wsdl&quot;&gt;&#xd;
+      &lt;s:element name=&quot;wsbibliografia&quot;&gt;&#xd;
+        &lt;s:complexType&gt;&#xd;
+          &lt;s:sequence&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;plengua&quot; type=&quot;s:string&quot;/&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;pcurso&quot; type=&quot;s:string&quot;/&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;pcodasi&quot; type=&quot;s:string&quot;/&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;porden&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;/s:sequence&gt;&#xd;
+        &lt;/s:complexType&gt;&#xd;
+      &lt;/s:element&gt;&#xd;
+      &lt;s:element name=&quot;wsbibliografiaResponse&quot;&gt;&#xd;
+        &lt;s:complexType&gt;&#xd;
+          &lt;s:sequence&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;wsbibliografiaResult&quot; type=&quot;tns:ArrayOfClaseBibliografia&quot;/&gt;&#xd;
+          &lt;/s:sequence&gt;&#xd;
+        &lt;/s:complexType&gt;&#xd;
+      &lt;/s:element&gt;&#xd;
+      &lt;s:complexType name=&quot;ArrayOfClaseBibliografia&quot;&gt;&#xd;
+        &lt;s:sequence&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;ClaseBibliografia&quot; nillable=&quot;true&quot; type=&quot;tns:ClaseBibliografia&quot;/&gt;&#xd;
+        &lt;/s:sequence&gt;&#xd;
+      &lt;/s:complexType&gt;&#xd;
+      &lt;s:complexType name=&quot;ClaseBibliografia&quot;&gt;&#xd;
+        &lt;s:sequence&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;codusu&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;desusuario&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;codbiblio&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;nivel&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;categoria&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;escomun&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;observaciones&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;titulo&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;autores&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;editorial&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;lugaredicion&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;anyo&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;edicion&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;localizacion&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;urlprofesor&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;isbn&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;validadosibyd&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;biblioteca&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;parametrocgi&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;parametrocgi2&quot; type=&quot;s:string&quot;/&gt;&#xd;
+        &lt;/s:sequence&gt;&#xd;
+      &lt;/s:complexType&gt;&#xd;
+    &lt;/s:schema&gt;</string>
+          </schemas>
+          <encoding>windows-1252</encoding>
+          <baseUri>https://cvnet.cpd.ua.es/servicioweb/publicos/pub_docencia.asmx?WSDL</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix>
+            <entry>
+              <string>http://UASI/WS_DOCENCIA.wsdl</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>wsbibliografiaResponse</id>
+        <displayName>wsbibliografiaResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:wsbibliografiaResult</name>
+            <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+              <dataType>XML</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                      <localPart>ArrayOfClaseBibliografia</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <fields>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:ClaseBibliografia</name>
+                  <model class="org.mule.common.metadata.DefaultListMetaDataModel">
+                    <dataType>LIST</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName>
+                            <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                            <localPart>ClaseBibliografia</localPart>
+                            <prefix></prefix>
+                          </typeQName>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        <org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                          <maxOccurs>2147483647</maxOccurs>
+                          <minOccurs>0</minOccurs>
+                        </org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                    <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                      <dataType>XML</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties/>
+                      </metaDataModelPropertiesManager>
+                      <fields>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:codusu</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>codusu</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:desusuario</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>desusuario</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:codbiblio</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>codbiblio</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:nivel</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>nivel</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:categoria</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>categoria</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:escomun</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>escomun</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:observaciones</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>observaciones</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:titulo</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>titulo</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:autores</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>autores</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:editorial</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>editorial</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:lugaredicion</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>lugaredicion</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:anyo</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>anyo</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:edicion</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>edicion</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:localizacion</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>localizacion</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:urlprofesor</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>urlprofesor</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:isbn</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>isbn</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:validadosibyd</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>validadosibyd</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:biblioteca</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>biblioteca</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:parametrocgi</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>parametrocgi</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                        <org.mule.common.metadata.DefaultMetaDataField>
+                          <name>ns0:parametrocgi2</name>
+                          <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                            <dataType>STRING</dataType>
+                            <metaDataModelPropertiesManager>
+                              <properties>
+                                <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  <typeQName reference="../../../../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                              </properties>
+                            </metaDataModelPropertiesManager>
+                          </model>
+                          <accessType>READ_WRITE</accessType>
+                          <metaDataFieldPropertyManager>
+                            <properties>
+                              <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                <name>
+                                  <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                                  <localPart>parametrocgi2</localPart>
+                                  <prefix>ns0</prefix>
+                                </name>
+                              </org.mule.common.metadata.property.QNameMetaDataProperty>
+                            </properties>
+                          </metaDataFieldPropertyManager>
+                        </org.mule.common.metadata.DefaultMetaDataField>
+                      </fields>
+                      <rootElement>
+                        <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                        <localPart>wsbibliografiaResponse</localPart>
+                        <prefix>ns0</prefix>
+                      </rootElement>
+                      <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                        <schemas>
+                          <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;s:schema xmlns:s=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:http=&quot;http://schemas.xmlsoap.org/wsdl/http/&quot; xmlns:mime=&quot;http://schemas.xmlsoap.org/wsdl/mime/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:soap12=&quot;http://schemas.xmlsoap.org/wsdl/soap12/&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:tm=&quot;http://microsoft.com/wsdl/mime/textMatching/&quot; xmlns:tns=&quot;http://UASI/WS_DOCENCIA.wsdl&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://UASI/WS_DOCENCIA.wsdl&quot;&gt;&#xd;
+      &lt;s:element name=&quot;wsbibliografia&quot;&gt;&#xd;
+        &lt;s:complexType&gt;&#xd;
+          &lt;s:sequence&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;plengua&quot; type=&quot;s:string&quot;/&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;pcurso&quot; type=&quot;s:string&quot;/&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;pcodasi&quot; type=&quot;s:string&quot;/&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;porden&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;/s:sequence&gt;&#xd;
+        &lt;/s:complexType&gt;&#xd;
+      &lt;/s:element&gt;&#xd;
+      &lt;s:element name=&quot;wsbibliografiaResponse&quot;&gt;&#xd;
+        &lt;s:complexType&gt;&#xd;
+          &lt;s:sequence&gt;&#xd;
+            &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;wsbibliografiaResult&quot; type=&quot;tns:ArrayOfClaseBibliografia&quot;/&gt;&#xd;
+          &lt;/s:sequence&gt;&#xd;
+        &lt;/s:complexType&gt;&#xd;
+      &lt;/s:element&gt;&#xd;
+      &lt;s:complexType name=&quot;ArrayOfClaseBibliografia&quot;&gt;&#xd;
+        &lt;s:sequence&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;ClaseBibliografia&quot; nillable=&quot;true&quot; type=&quot;tns:ClaseBibliografia&quot;/&gt;&#xd;
+        &lt;/s:sequence&gt;&#xd;
+      &lt;/s:complexType&gt;&#xd;
+      &lt;s:complexType name=&quot;ClaseBibliografia&quot;&gt;&#xd;
+        &lt;s:sequence&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;codusu&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;desusuario&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;codbiblio&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;nivel&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;categoria&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;escomun&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;observaciones&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;titulo&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;autores&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;editorial&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;lugaredicion&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;anyo&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;edicion&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;localizacion&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;urlprofesor&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;isbn&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;validadosibyd&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;biblioteca&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;parametrocgi&quot; type=&quot;s:string&quot;/&gt;&#xd;
+          &lt;s:element maxOccurs=&quot;1&quot; minOccurs=&quot;0&quot; name=&quot;parametrocgi2&quot; type=&quot;s:string&quot;/&gt;&#xd;
+        &lt;/s:sequence&gt;&#xd;
+      &lt;/s:complexType&gt;&#xd;
+    &lt;/s:schema&gt;</string>
+                        </schemas>
+                        <encoding reference="../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+                        <baseUri>https://cvnet.cpd.ua.es/servicioweb/publicos/pub_docencia.asmx?WSDL</baseUri>
+                      </schemas>
+                      <namespaceManager>
+                        <namespacePrefix>
+                          <entry>
+                            <string>http://UASI/WS_DOCENCIA.wsdl</string>
+                            <string>ns0</string>
+                          </entry>
+                        </namespacePrefix>
+                      </namespaceManager>
+                    </model>
+                    <isArray>false</isArray>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                          <localPart>ClaseBibliografia</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+              </fields>
+              <rootElement>
+                <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                <localPart>wsbibliografiaResponse</localPart>
+                <prefix>ns0</prefix>
+              </rootElement>
+              <schemas class="org.mule.common.metadata.StringBasedSchemaProvider" reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas"/>
+              <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+                    <localPart>wsbibliografiaResult</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://UASI/WS_DOCENCIA.wsdl</namespaceURI>
+          <localPart>wsbibliografiaResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>https://cvnet.cpd.ua.es/servicioweb/publicos/pub_docencia.asmx?WSDL</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+  </types>
+  <connectorName>Web_Service_Consumer1</connectorName>
+</metadata__catalog__entry>

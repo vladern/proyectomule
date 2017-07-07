@@ -1,0 +1,515 @@
+<metadata__catalog__entry>
+  <version>5.2.0.0</version>
+  <types class="tree-map">
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>WS_comprarRequest</id>
+        <displayName>WS_comprarRequest</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey">
+                <id>WS_comprarRequest</id>
+                <displayName>WS_comprarRequest</displayName>
+                <category>DEFAULT</category>
+                <metaDataKeyPropertiesManager>
+                  <properties>
+                    <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+                  </properties>
+                </metaDataKeyPropertiesManager>
+              </metaDataKey>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:input</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                      <localPart>string</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http:/comprar.bpel.mtis</namespaceURI>
+                    <localPart>input</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:cantidad</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>INTEGER</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                      <localPart>int</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http:/comprar.bpel.mtis</namespaceURI>
+                    <localPart>cantidad</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http:/comprar.bpel.mtis</namespaceURI>
+          <localPart>WS_comprarRequest</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;schema xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:plnk=&quot;http://docs.oasis-open.org/wsbpel/2.0/plnktype&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http:/comprar.bpel.mtis&quot; xmlns:vprop=&quot;http://docs.oasis-open.org/wsbpel/2.0/varprop&quot; xmlns:wsdl=&quot;http://www.example.org/AlmacenWSDL/&quot; xmlns:wsdl1=&quot;http://www.example.org/Proveedor1WSDL/&quot; xmlns:wsdl2=&quot;http://www.example.org/Proveedor2WSDL/&quot; xmlns:wsdl3=&quot;http://www.example.org/Proveedor3WSDL/&quot; attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http:/comprar.bpel.mtis&quot;&gt;&#xd;
+&#xd;
+            &lt;element name=&quot;WS_comprarRequest&quot;&gt;&#xd;
+                &lt;complexType&gt;&#xd;
+                    &lt;sequence&gt;&#xd;
+                    	&lt;element name=&quot;input&quot; type=&quot;string&quot;/&gt;&#xd;
+                    	&lt;element name=&quot;cantidad&quot; type=&quot;int&quot;/&gt;&#xd;
+                    &lt;/sequence&gt;&#xd;
+                &lt;/complexType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+&#xd;
+            &lt;element name=&quot;WS_comprarResponse&quot;&gt;&#xd;
+                &lt;complexType&gt;&#xd;
+                    &lt;sequence&gt;&#xd;
+                        &lt;element name=&quot;result&quot; type=&quot;string&quot;/&gt;&#xd;
+                    &lt;/sequence&gt;&#xd;
+                &lt;/complexType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+        &lt;/schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.example.org/AlmacenWSDL/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; targetNamespace=&quot;http://www.example.org/AlmacenWSDL/&quot;&gt;&#xd;
+      &lt;xsd:element name=&quot;Comprobar&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+&#xd;
+          	&lt;xsd:element name=&quot;referencia&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+          	&lt;xsd:element name=&quot;cant&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;ComprobarResponse&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+            &lt;xsd:element name=&quot;out&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;Actualizar&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;referencia&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+      			&lt;xsd:element name=&quot;cant&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+      			&lt;xsd:element name=&quot;venta&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;ActualizarResponse&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;out&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+    &lt;/xsd:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.example.org/Proveedor1WSDL/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; targetNamespace=&quot;http://www.example.org/Proveedor1WSDL/&quot;&gt;&#xd;
+      &lt;xsd:element name=&quot;Presupuesto&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+          	&lt;xsd:element name=&quot;refProducto1&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+          	&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;PresupuestoResponse&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+            &lt;xsd:element name=&quot;precio&quot; type=&quot;xsd:float&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompra&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;refProducto&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+      			&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompraResponse&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;out&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+    &lt;/xsd:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.example.org/Proveedor3WSDL/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; targetNamespace=&quot;http://www.example.org/Proveedor3WSDL/&quot;&gt;&#xd;
+      &lt;xsd:element name=&quot;Presupuesto3&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+          	&lt;xsd:element name=&quot;refProducto3&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+          	&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;Presupuesto3Response&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+            &lt;xsd:element name=&quot;precio&quot; type=&quot;xsd:float&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompra3&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;refProducto&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+      			&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompra3Response&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;out&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+    &lt;/xsd:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.example.org/Proveedor2WSDL/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; targetNamespace=&quot;http://www.example.org/Proveedor2WSDL/&quot;&gt;&#xd;
+      &lt;xsd:element name=&quot;Presupuesto2&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+          	&lt;xsd:element name=&quot;refProducto2&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+          	&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;Presupuesto2Response&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+            &lt;xsd:element name=&quot;precio&quot; type=&quot;xsd:float&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompra2&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;refProducto&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+      			&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompra2Response&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;out&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+    &lt;/xsd:schema&gt;</string>
+          </schemas>
+          <encoding>windows-1252</encoding>
+          <baseUri>http://localhost:8080/ode/deployment/bundles/BPEL_Practica2/WS_comprarArtifacts.wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix>
+            <entry>
+              <string>http:/comprar.bpel.mtis</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>WS_comprarResponse</id>
+        <displayName>WS_comprarResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey">
+                <id>WS_comprarResponse</id>
+                <displayName>WS_comprarResponse</displayName>
+                <category>DEFAULT</category>
+                <metaDataKeyPropertiesManager>
+                  <properties>
+                    <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+                  </properties>
+                </metaDataKeyPropertiesManager>
+              </metaDataKey>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:result</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>STRING</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName reference="../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http:/comprar.bpel.mtis</namespaceURI>
+                    <localPart>result</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http:/comprar.bpel.mtis</namespaceURI>
+          <localPart>WS_comprarResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;schema xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:plnk=&quot;http://docs.oasis-open.org/wsbpel/2.0/plnktype&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http:/comprar.bpel.mtis&quot; xmlns:vprop=&quot;http://docs.oasis-open.org/wsbpel/2.0/varprop&quot; xmlns:wsdl=&quot;http://www.example.org/AlmacenWSDL/&quot; xmlns:wsdl1=&quot;http://www.example.org/Proveedor1WSDL/&quot; xmlns:wsdl2=&quot;http://www.example.org/Proveedor2WSDL/&quot; xmlns:wsdl3=&quot;http://www.example.org/Proveedor3WSDL/&quot; attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http:/comprar.bpel.mtis&quot;&gt;&#xd;
+&#xd;
+            &lt;element name=&quot;WS_comprarRequest&quot;&gt;&#xd;
+                &lt;complexType&gt;&#xd;
+                    &lt;sequence&gt;&#xd;
+                    	&lt;element name=&quot;input&quot; type=&quot;string&quot;/&gt;&#xd;
+                    	&lt;element name=&quot;cantidad&quot; type=&quot;int&quot;/&gt;&#xd;
+                    &lt;/sequence&gt;&#xd;
+                &lt;/complexType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+&#xd;
+            &lt;element name=&quot;WS_comprarResponse&quot;&gt;&#xd;
+                &lt;complexType&gt;&#xd;
+                    &lt;sequence&gt;&#xd;
+                        &lt;element name=&quot;result&quot; type=&quot;string&quot;/&gt;&#xd;
+                    &lt;/sequence&gt;&#xd;
+                &lt;/complexType&gt;&#xd;
+            &lt;/element&gt;&#xd;
+        &lt;/schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.example.org/AlmacenWSDL/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; targetNamespace=&quot;http://www.example.org/AlmacenWSDL/&quot;&gt;&#xd;
+      &lt;xsd:element name=&quot;Comprobar&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+&#xd;
+          	&lt;xsd:element name=&quot;referencia&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+          	&lt;xsd:element name=&quot;cant&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;ComprobarResponse&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+            &lt;xsd:element name=&quot;out&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;Actualizar&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;referencia&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+      			&lt;xsd:element name=&quot;cant&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+      			&lt;xsd:element name=&quot;venta&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;ActualizarResponse&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;out&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+    &lt;/xsd:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.example.org/Proveedor1WSDL/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; targetNamespace=&quot;http://www.example.org/Proveedor1WSDL/&quot;&gt;&#xd;
+      &lt;xsd:element name=&quot;Presupuesto&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+          	&lt;xsd:element name=&quot;refProducto1&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+          	&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;PresupuestoResponse&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+            &lt;xsd:element name=&quot;precio&quot; type=&quot;xsd:float&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompra&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;refProducto&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+      			&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompraResponse&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;out&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+    &lt;/xsd:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.example.org/Proveedor3WSDL/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; targetNamespace=&quot;http://www.example.org/Proveedor3WSDL/&quot;&gt;&#xd;
+      &lt;xsd:element name=&quot;Presupuesto3&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+          	&lt;xsd:element name=&quot;refProducto3&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+          	&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;Presupuesto3Response&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+            &lt;xsd:element name=&quot;precio&quot; type=&quot;xsd:float&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompra3&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;refProducto&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+      			&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompra3Response&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;out&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+    &lt;/xsd:schema&gt;</string>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.example.org/Proveedor2WSDL/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; targetNamespace=&quot;http://www.example.org/Proveedor2WSDL/&quot;&gt;&#xd;
+      &lt;xsd:element name=&quot;Presupuesto2&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+          	&lt;xsd:element name=&quot;refProducto2&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+          	&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;Presupuesto2Response&quot;&gt;&#xd;
+        &lt;xsd:complexType&gt;&#xd;
+          &lt;xsd:sequence&gt;&#xd;
+            &lt;xsd:element name=&quot;precio&quot; type=&quot;xsd:float&quot;/&gt;&#xd;
+          &lt;/xsd:sequence&gt;&#xd;
+        &lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompra2&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;refProducto&quot; type=&quot;xsd:string&quot;/&gt;&#xd;
+      			&lt;xsd:element name=&quot;cantidad&quot; type=&quot;xsd:int&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+      &lt;xsd:element name=&quot;OrdenCompra2Response&quot;&gt;&#xd;
+      	&lt;xsd:complexType&gt;&#xd;
+      		&lt;xsd:sequence&gt;&#xd;
+&#xd;
+      			&lt;xsd:element name=&quot;out&quot; type=&quot;xsd:boolean&quot;/&gt;&#xd;
+      		&lt;/xsd:sequence&gt;&#xd;
+      	&lt;/xsd:complexType&gt;&#xd;
+      &lt;/xsd:element&gt;&#xd;
+    &lt;/xsd:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>http://localhost:8080/ode/deployment/bundles/BPEL_Practica2/WS_comprarArtifacts.wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix>
+            <entry>
+              <string>http:/comprar.bpel.mtis</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+  </types>
+  <connectorName>Web_Service_Consumer</connectorName>
+</metadata__catalog__entry>

@@ -1,0 +1,25 @@
+{
+    "inputMessageMetadata": {
+        "sessionVariables": {
+            "lengua": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "inputUA"
+            },
+            "curso": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "inputUA"
+            },
+            "titulacion": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "inputUA"
+            },
+            "orden": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "inputUA"
+            }
+        }
+    },
+    "outputMessageMetadata": {},
+    "id": "f8f84995-eb04-4a5b-b61c-d7bbc3557a53",
+    "version": "5.2.0.0"
+}

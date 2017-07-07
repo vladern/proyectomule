@@ -1,0 +1,32 @@
+<metadata__catalog__entry>
+  <version>5.2.0.0</version>
+  <types class="tree-map">
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>Test.SampleComponent.Class1, Test.SampleComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</id>
+        <displayName>Class1</displayName>
+        <category>DotNetMetadataCategory</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <null/>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>Test.SampleComponent.Sample, Test.SampleComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null||Test.SampleComponent.Sample, Test.SampleComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null | getEmail() -&gt; System.Object</id>
+        <displayName>Sample||object getEmail()</displayName>
+        <category>DotNetMetadataCategory</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <null/>
+    </entry>
+  </types>
+  <connectorName>DotNet__Legacy</connectorName>
+</metadata__catalog__entry>

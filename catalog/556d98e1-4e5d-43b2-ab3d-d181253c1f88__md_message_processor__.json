@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "cantidad"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "Web_Service_Consumer",
+            "typeId": "WS_comprarRequest"
+        }
+    },
+    "id": "556d98e1-4e5d-43b2-ab3d-d181253c1f88",
+    "version": "5.2.0.0"
+}

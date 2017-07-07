@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns0:WS_comprarRequest xmlns:ns0="http:/comprar.bpel.mtis">
+  <ns0:input>????</ns0:input>
+  <ns0:cantidad>1</ns0:cantidad>
+</ns0:WS_comprarRequest>

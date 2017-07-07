@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:email="http://www.mulesoft.org/schema/mule/email"
+	xmlns:smtp="http://www.mulesoft.org/schema/mule/smtp"
+	xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:dotnet="http://www.mulesoft.org/schema/mule/dotnet" xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/email http://www.mulesoft.org/schema/mule/email/current/mule-email.xsd
+http://www.mulesoft.org/schema/mule/smtp http://www.mulesoft.org/schema/mule/smtp/current/mule-smtp.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd
+http://www.mulesoft.org/schema/mule/dotnet http://www.mulesoft.org/schema/mule/dotnet/current/mule-dotnet.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="9090" doc:name="HTTP Listener Configuration"/>
+    <ws:consumer-config name="Web_Service_Consumer" service="WS_comprarService" port="WS_comprarPort" serviceAddress="http://localhost:8080/ode/processes/WS_comprar" wsdlLocation="http://localhost:8080/ode/deployment/bundles/BPEL_Practica2/WS_comprarArtifacts.wsdl" doc:name="Web Service Consumer"/>
+    <db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="root" database="flujo1" doc:name="MySQL Configuration"/>
+    <http:request-config name="HTTP_Request_Configuration" protocol="HTTPS" host="catalogo.datos.ua.es" port="443" enableCookies="true" doc:name="HTTP Request Configuration"/>
+    <payload-type-filter expectedType="parser.api.ua.Parser" name="Payload" doc:name="Payload"/>
+    <ws:consumer-config name="Web_Service_Consumer1" service="pub_gestdocente" port="pub_gestdocenteSoap" serviceAddress="https://cvnet.cpd.ua.es/servicioweb/publicos/pub_gestdocente.asmx" wsdlLocation="https://cvnet.cpd.ua.es/servicioweb/publicos/pub_docencia.asmx?WSDL" doc:name="Web Service Consumer"/>
+    <ws:consumer-config name="ws_ua" service="pub_gestdocente" port="pub_gestdocenteSoap" serviceAddress="https://cvnet.cpd.ua.es/servicioweb/publicos/pub_gestdocente.asmx" wsdlLocation="https://cvnet.cpd.ua.es/servicioweb/publicos/pub_gestdocente.asmx?WSDL" doc:name="Web Service Consumer"/>
+    <jms:activemq-connector name="Active_MQ" username="vlad" password="vlad" brokerURL="tcp://localhost:61616" validateConnections="true" doc:name="Active MQ" />
+    <smtp:gmail-connector name="Gmail"      validateConnections="true" doc:name="Gmail"/>
+    <dotnet:config name="DotNet__Legacy" scope="Singleton" assemblyType="Test.SampleComponent.Sample , Test.SampleComponent" assemblyPath="C:\Users\plakaplaka\Documents\Visual Studio 2015\Projects\Proyecto4MTIS\Test.SampleComponent\bin\Release\Test.SampleComponent.dll" doc:name="DotNet: Legacy"/>
+    
+    <flow name="proyectomuleFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/*"  doc:name="HTTP"/>
+        <set-session-variable variableName="stream" value="#[message.inboundProperties.'http.request.path']" doc:name="Session Variable"/>
+        <logger message="#[sessionVars.stream]" level="INFO" doc:name="Logger"/>
+        <choice doc:name="Choice">
+            <when expression="#[sessionVars.stream=='/flujo1']">
+                <flow-ref name="proyectomuleFlow1" doc:name="proyectomuleFlow1"/>
+            </when>
+            <when expression="#[sessionVars.stream=='/flujo2']">
+                <flow-ref name="proyectomuleFlow2" doc:name="proyectomuleFlow2"/>
+            </when>
+            <when expression="#[sessionVars.stream=='/flujo3']">
+                <flow-ref name="proyectomuleFlow3" doc:name="proyectomuleFlow3"/>
+            </when>
+            <otherwise>
+                <flow-ref name="proyectomuleFlowDefoult" doc:name="proyectomuleFlowDefoult"/>
+            </otherwise>
+        </choice>
+    </flow>
+    <flow name="proyectomuleFlow5" initialState="started" processingStrategy="synchronous">
+        <jms:inbound-endpoint topic="uatopic" connector-ref="Active_MQ" doc:name="JMS">
+             <properties>
+          		<spring:entry key="pollingFrequency" value="1000" />
+     		</properties>
+        </jms:inbound-endpoint>
+        <logger level="INFO" doc:name="Logger"/>
+        <set-session-variable variableName="json" value="#[payload]" doc:name="Session Variable"/>
+        <dotnet:execute config-ref="DotNet__Legacy" methodName="Test.SampleComponent.Sample, Test.SampleComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null||Test.SampleComponent.Sample, Test.SampleComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null | getEmail() -&gt; System.Object" doc:name="DotNet"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <set-session-variable variableName="email" value="#[payload]" doc:name="Session Variable"/>
+        <set-attachment attachmentName="fechas" value="#[sessionVars.json]" contentType="text/plain" doc:name="Attachment"/>
+        <smtp:outbound-endpoint host="smtp.gmail.com" port="587" user="vladys.3234%40gmail.com" password="GO3234VLAD02" connector-ref="Gmail" to="vk18@alu.ua.es" from="vladys.3234@gmail.com" subject="Prueba de concepto MTIS" responseTimeout="10000" doc:name="SMTP"/>
+    </flow>
+    <flow name="proyectomuleFlow3">
+        <set-session-variable variableName="lengua" value="C" doc:name="Session Variable"/>
+        <set-session-variable variableName="curso" value="2016-17" doc:name="Session Variable"/>
+        <set-session-variable variableName="titulacion" value="C203" doc:name="Session Variable"/>
+        <set-session-variable variableName="orden" value="D" doc:name="Session Variable"/>
+        <dw:transform-message metadata:id="e8eec767-5a17-46eb-977a-b1dab242a263" doc:name="Transform Message">
+            <dw:input-session-variable mimeType="application/java" variableName="orden"/>
+            <dw:input-session-variable mimeType="application/java" variableName="titulacion"/>
+            <dw:input-session-variable mimeType="application/java" variableName="lengua"/>
+            <dw:input-session-variable mimeType="application/java" variableName="curso"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://UASI/WS_GESTDOCENTE.wsdl
+---
+{
+	ns0#wsfechaexamenesasi: {
+		ns0#plengua: sessionVars.lengua,
+		ns0#pcodest: sessionVars.titulacion,
+		ns0#pcurso: sessionVars.curso,
+		ns0#porden: sessionVars.orden
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <ws:consumer config-ref="ws_ua" operation="wsfechaexamenesasi" doc:name="Web Service Consumer"/>
+        <json:xml-to-json-transformer doc:name="XML to JSON"/>
+        <jms:outbound-endpoint topic="uatopic" connector-ref="Active_MQ" doc:name="JMS"/>
+        <set-payload value="OK." doc:name="Set Payload"/>
+    </flow>
+    <flow name="proyectomuleFlow2">
+        <http:request config-ref="HTTP_Request_Configuration" path="/datasets/Campus o Sedes de la Universidad de Alicante/Campus o Sedes de la Universidad de Alicante.json" method="GET" doc:name="HTTP"/>
+    </flow>
+    <flow name="proyectomuleFlow1">
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <set-session-variable variableName="input" value="#[payload.input]" doc:name="input"/>
+        <set-session-variable variableName="cantidad" value="#[payload.cantidad]" doc:name="cantidad"/>
+        <logger message="#[payload.input]" level="INFO" doc:name="Logger"/>
+        <dw:transform-message metadata:id="67bf32d7-5a9b-4f1a-86d3-9fc97ba0d982" doc:name="Transform Message">
+            <dw:input-session-variable mimeType="application/java" variableName="input"/>
+            <dw:input-session-variable mimeType="application/java" variableName="cantidad"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http:/comprar.bpel.mtis
+---
+{
+	ns0#WS_comprarRequest: {
+		ns0#input: sessionVars.input,
+		ns0#cantidad: sessionVars.cantidad as :number
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+
+        <ws:consumer config-ref="Web_Service_Consumer" operation="process" doc:name="Web Service Consumer"/>
+        <json:xml-to-json-transformer doc:name="XML to JSON"/>
+        <set-session-variable variableName="returnVariable" value="#[payload]" doc:name="Session Variable"/>
+        <db:insert config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[INSERT INTO `log`(`log`) VALUES (#[payload])]]></db:parameterized-query>
+        </db:insert>
+        <set-payload value="#[sessionVars.returnVariable]" doc:name="Set Payload"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="proyectomuleFlowDefoult">
+        <set-payload value="#['NO HAY NINGUN FUJO LLAMADO '+ message.inboundProperties.'http.request.path']" doc:name="Set Payload"/>
+    </flow>
+</mule>
